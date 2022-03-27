@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cam and Maddy's Road Trips</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="./main.css" />
+    <link rel="shortcut icon" type="image/png" href="./images/motorway.png">
+    <script src="./app.js"></script>
+  </head>
+  <body>
+    <div id="welcome_msg"> 
+      Cam and Maddy's Cross-Canada Travel!
+    </div>
+    <div id="instructions"> 
+      Click a pin on the map to see pictures from our trips.
+    </div>
+    <div id="key">
+      &#128997; = Westbound to Vancouver (June 2021)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#128998; = Eastbound to Toronto (June 2021)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#128999; = Perth & Montreal (September 2021)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#129001; = Le Massif Ski Trip (March 2022)
+    </div>
+
+    <div id="map"></div>
+    <div id="notes">
+      <p>
+        Make the map fullscreen for a better experience. Drag and zoom in to view locations!
+      </p>
+    </div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7KVF1Q1_Gf6wBVr9iWhgwMGuL1nc72bQ&callback=initMap&v=weekly"
+      async
+    ></script>
+  </body>
+</html>
