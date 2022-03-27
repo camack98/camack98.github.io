@@ -37,7 +37,7 @@ function initMap() {
     'Here\'s Maddy inside a massive tree in Stanley Park.'
   ]
 
-  const path = "<center><img src='/Users/cameronmackay/dev/Road_Trip/images/"
+  const path = "<center><img src='/Users/cameronmackay/dev/Road_Trip/Road_trip_final/camack98.github.io/images/"
   const landscape = "'style='width:333px;height:250px;'></center>"
   const portrait = "'style='width:210px;height:280px;'</center>"
 
