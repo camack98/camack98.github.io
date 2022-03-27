@@ -1,4 +1,3 @@
-// 6. host on domain! Need to figure out cost (including Google maps API). is github.io free? 
 
 function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
