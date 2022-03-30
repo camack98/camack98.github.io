@@ -209,7 +209,7 @@ function initMap() {
 
   const text3 = [
     'Our new home city!',
-    'Le massif de Charlevoix! Amazing views of the St. Lawrence. <br>Got a snowstorm the second day but luckily some sun on this one. ',
+    'Le Massif de Charlevoix! Amazing views of the St. Lawrence. <br>Got a snowstorm the second day but luckily some sun on this one. ',
     'Got some french viennoiseries in Quebec City on the drive back. <br> Did you know that in Quebec they call it Chocolatine instead of Pain au Chocolat?',
     'Stopped by in Montreal to see my singing teacher Ramneek perform in her concert!'
   ]
