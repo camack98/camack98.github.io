@@ -9,17 +9,20 @@
     <script src="./app.js"></script>
   </head>
   <body>
+    
     <div id="welcome_msg"> 
       Cam and Maddy's Cross-Canada Travel!
     </div>
+
     <div id="instructions"> 
       Click a pin on the map to see pictures from our trips.
     </div>
+
     <div id="key">
-      <img src="./images/red.png?" style="width:2px;height:2px;"> = Westbound to Vancouver (June 2021)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &#128998; = Eastbound to Toronto (June 2021)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &#128999; = Perth & Montreal (September 2021)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &#129001; = Le Massif Ski Trip (March 2022)
+      <img src="./images/red.png?" style="width:15px;height:15px;"> = Westbound to Vancouver (June 2021)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <img src="./images/blue.png?" style="width:15px;height:15px;"> = Eastbound to Toronto (June 2021)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <img src="./images/orange.png?" style="width:15px;height:15px;"> = Perth & Montreal (September 2021)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <img src="./images/green.png?" style="width:15px;height:15px;"> = Le Massif Ski Trip (March 2022)
     </div>
 
     <div id="map"></div>
@@ -29,7 +32,6 @@
       </p>
     </div>
 
-    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7KVF1Q1_Gf6wBVr9iWhgwMGuL1nc72bQ&callback=initMap&v=weekly"
       async

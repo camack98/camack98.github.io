@@ -6,7 +6,6 @@ function initMap() {
     mapTypeId: "roadmap",
     streetViewControl: false
   });
-  // map.getProjection();
 
   const text = [
     'Picked up the truck! Thank you Jill!',
@@ -36,9 +35,9 @@ function initMap() {
     'Here\'s Maddy inside a massive tree in Stanley Park.'
   ]
 
-  // const path = "<center><img src='/Users/cameronmackay/dev/Road_Trip/Road_trip_final/camack98.github.io/images/"
   const path = "<center><img src='images/"
 
+  //HTML for image layout
   const landscape = "'style='width:333px;height:250px;'></center>"
   const portrait = "'style='width:210px;height:280px;'</center>"
 
@@ -75,10 +74,12 @@ function initMap() {
     [{ lat: 49.282, lng: -123.120 }, path + "vancouver.jpeg" + portrait + "<p><center>" + text[24] + "</center></p>"]
   ];
 
+  //Gets coordinate object (first element) from each element in array
   const westModified = westCoordinates.map(function (x) {
     return x[0];
   });
 
+  // Define polyline (solid line between location) attributes
   const westBound = new google.maps.Polyline({
     path: westModified,
     geodesic: true,
@@ -110,7 +111,7 @@ function initMap() {
     [{ lat: 53.277, lng: -110.034 }, path + "lloydminster.jpeg" + portrait + "<p><center>" + text2[3] + "</center></p>"],
     [{ lat: 52.151, lng: -106.668 }, path + "saskatoon.jpeg" + portrait + "<p><center>" + text2[4] + "</center></p>"],
     [{ lat: 51.852, lng: -105.028 }, path + "lanigan.jpeg" + portrait + "<p><center>" + text2[5] + "</center></p>"],
-    [{ lat: 50.451, lng: -104.500 }, path + "regina_2.jpg" + portrait + "<p><center>" + text2[6] + "</center></p>"],
+    [{ lat: 50.451, lng: -104.500 }, path + "regina_2.JPG" + portrait + "<p><center>" + text2[6] + "</center></p>"],
     [{ lat: 49.904, lng: -102.023 }, path + "wawota.jpeg" + portrait + "<p><center>" + text2[7] + "</center></p>"],
     [{ lat: 49.900, lng: -97.139 }, path + "winnipeg.jpeg" + landscape + "<p><center>" + text2[8] + "</center></p>"],
     [{ lat: 48.823, lng: -89.923 }, path + "time_zone.jpeg" + "'style='width:210px;height:240px;'</center>" + "<p><center>" + text2[9] + "</center></p>"],
@@ -125,6 +126,7 @@ function initMap() {
     return x[0];
   });
 
+  // Plot polyline (line between each location) for all coordinates in above array
   const eastBound = new google.maps.Polyline({
     path: eastModified,
     geodesic: true,
@@ -133,6 +135,7 @@ function initMap() {
     strokeWeight: 2,
   });
 
+  //Define shape and colour of marker (pin) SVG on map
   const svgMarker1 = {
     path: "M12 0a8 8 0 0 0-8 8c0 1.421.382 2.75 1.031 3.906.108.192.221.381.344.563L12 24l6.625-11.531c.102-.151.19-.311.281-.469l.063-.094A7.954 7.954 0 0 0 20 8a8 8 0 0 0-8-8zm0 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8z",
     fillColor: "red",
@@ -146,6 +149,7 @@ function initMap() {
   var i;
 
   for (i = 0; i < westCoordinates.length; i++) {
+    // Drop marker at each coordinate
     var marker = new google.maps.Marker({
       position: westCoordinates[i][0],
       map,
@@ -155,11 +159,13 @@ function initMap() {
       title: "marker" + i
     });
 
+    //Create infowindow with respective image and text context for marker
     var infowindow2 = new google.maps.InfoWindow({
       position: marker.position,
       content: westCoordinates[i][1]
     });
 
+    //Add click event listener to open infowindow, zoom in etc.
     google.maps.event.addListener(marker, 'click', (function (marker, i) {
       return function () {
         map.setZoom(8);

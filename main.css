@@ -1,6 +1,4 @@
 #welcome_msg {
-  /* margin: 2;
-  padding: 2; */
   font-family: 'futura';
   font-size: 4rem;
   text-transform: capitalize;
@@ -15,44 +13,31 @@
   font-size: 2rem;
   font-style: italic;
   text-align: center;
-  /* text-indent: 50px; */
   top: 20px;
-  /* text-transform: capitalize; */
-  /* text-shadow: 1px 1px 1px rgb(122, 121, 131),
-               2px 2px 1px rgb(194, 123, 123); */
-  /* text-align: center; */
 }
 
 #key {
   font-family: 'futura';
   font-size: 1rem;
-  /* font-style: italic; */
   text-align: center;
-  /* text-indent: 50px; */
-  /* top: 15px; */
   padding-top: 30px;
 }
 
 #map {
     height: 90%;
     top: 10px;
-    /* bottom: 20px; */
     padding-bottom: 0.5em;
   }
-
 
 #notes {
   font-family: 'futura';
   font-size: 1rem;
   font-style: italic;
   text-align: left;
-  /* text-indent: 50px; */
-  /* top: 10px; */
   padding-top: 15px;
   padding-bottom: 5px;
-  /* bottom: 20px; */
 }
-  /* Optional: Makes the sample page fill the window. */
+
 html,
 body {
   height: 100%;
