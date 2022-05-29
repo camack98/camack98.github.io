@@ -1,5 +1,5 @@
 # Road Trips Website
-## https://camack98.github.io 🗺️:car:🍁
+## https://camack98.github.io 🗺️ :car: 🍁
 ### Outline
 Created website leveraging [Google Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/overview) to show a map of where I have travelled to in Canada, including pictures and descriptions from my travels.
 ### Useful API classes
